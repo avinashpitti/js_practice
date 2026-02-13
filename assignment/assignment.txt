@@ -1,0 +1,130 @@
+1.what is javascript?
+javascript is a high level programming language mainly used to make
+web pages interactive and dynamic
+javascript=behavior(logic+interaction)
+
+
+2. Who developed JavaScript, and what is the first name of JavaScript? 
+JavaScript was developed by brendan eich in 1995.
+It was originally called mocha then renamed to livescript,
+finally renamed to javascript
+
+
+3. Are ECMAScript and javascript related? How? 
+JavaScript is the practical language, and ECMAScript is the standard 
+that defines how JavaScript should work.
+
+
+4. Is JavaScript case-sensitive? 
+Yes, It treats uppercase and lowercase as different
+
+
+5. What are the different data types present in javascript? 
+javascript has 8 datatypes. They are divided into primitive and non primitive
+primitive:
+        These store single values and are immutable
+    string,number,bigint,boolean,undefined,null,symbol
+Non-primitive:
+    object: key-value pairs{name:'avi,course:'python}
+
+
+6. What do you mean by NULL in JavaScript? 
+null is a primitive data type that represents an intentional empty value
+It means this variable has no value right now, and I am intentionally
+setting it empty right now
+
+let user=null
+console.log(user) // null
+let a; 
+console.log(a) // undefined
+
+
+7. What do you mean by undefined value in JavaScript? 
+A variable has been declared but no value assigned yet
+let age;
+console.log(age);
+
+
+8. Difference between “ == “ and “ === “ operators. 
+== loose equality : compares values only (peforms type conversion)
+===strict equality : compares data types and values
+
+console.log(5=='5') // true
+console.log(5==='5') // false
+
+console.log(true==1) // true
+console.log(true===1) // false
+
+
+9. What do you mean by the “===” operator? 
+===strict equality : compares data types and values(no type conversion)
+
+
+10. Difference between var and let keyword in javascript. 
+Both are used to declare variables but
+var - function scoped
+let - block scoped
+if (true) {
+  var a = 10;
+  let b = 20;
+}
+
+console.log(a); // ✅ 10
+console.log(b); // ❌ Error (b is block scoped)
+let stays inside block
+var ignores block scoped
+
+var can be redclared
+let can't be redclared in same scope
+var x = 5;
+var x = 10;  // ✅ allowed
+
+let y = 5;
+let y = 10;  // ❌ Error
+
+Both are hoisted, but differently :
+console.log(a); // undefined
+var a = 5;
+
+console.log(b); // ❌ ReferenceError
+let b = 5;
+
+
+10b. let vs const
+Both are block scoped but they differ in mutability
+Reassignment:
+let can be reassigned
+const can't be reassigned
+
+let age = 25;
+age = 30;   // ✅ allowed
+
+const pi = 3.14;
+pi = 3.1415;  // ❌ Error
+
+Declaration :
+let can declare without initializing
+const must initialize at Declaration
+let a;        // ✅ allowed
+
+const b;      // ❌ Error
+
+object and array behavior :
+const prevents reassignment,not modification
+const arr = [1, 2];
+arr.push(3);   // ✅ allowed
+
+
+11. Explain Implicit Type Coercion in javascript.
+Implicit type Coercion means javascript automatically converts datatype 
+into another without you explicitly telling you to do so.
+
+
+
+
+
+
+
+
+
+
