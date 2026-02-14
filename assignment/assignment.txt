@@ -118,6 +118,35 @@ arr.push(3);   // ✅ allowed
 11. Explain Implicit Type Coercion in javascript.
 Implicit type Coercion means javascript automatically converts datatype 
 into another without you explicitly telling you to do so.
+console.log(5+'5');  // 55 (num+num=num;num+str=str)
+console.log('5'+5+5); // 555
+console.log(5+5+'5');  ///105
+
+console.log('10'-2);  // 8 (str converted automatically into num)
+console.log('20'-3-5); // 12 
+console.log(15-'3'-3-'3'); // 6
+
+
+console.log(5*2); // 10
+console.log(5*'2'); // 10
+console.log('5'*2);  // 10
+console.log('5'*'2');  // 10
+console.log('5'*2*'10'*3+"2"); // 3002
+console.log('5'*2*'10'*3+2);  //302
+
+
+console.log(5==='5'); // false
+console.log(5=='5');  // true
+
+console.log(true+1); // 2
+console.log(true+false); // 1
+console.log('true'+1);  // true1
+console.log(1+'true'); // 1true
+
+
+console.log(null === undefined); // false
+console.log(null == undefined); // true
+
 
 
 
