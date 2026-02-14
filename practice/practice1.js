@@ -1,13 +1,13 @@
-// write a program to print the lowest of the two
-let num1=Number(prompt('Num1 : '))
-let num2=Number(prompt('Num2 : '))
-
-if (num1 > num2){
-  console.log(num1,"is greater than",num2);
-}else if(num2 > num1){
-  console.log(num2,"is greater than",num1);
+// write a program to print the least number in given three numbers.
+let a =112;let b=56;let c=145;
+if (a===b && a===c){
+  console.log('All are equal');
+}else if(a<b &&a<c){
+  console.log('A is the lowest');
+}else if(b<a && b<c){
+  console.log('B is the smallest');
+}else if(c<a && c<b){
+  console.log('C is the lowest');
 }else{
-  console.log(num1,"is equal to",num2);
+  console.log('Two numbers are equal and lowest');
 }
-
-
