@@ -147,6 +147,86 @@ console.log(1+'true'); // 1true
 console.log(null === undefined); // false
 console.log(null == undefined); // true
 
+12. What is NaN property in JavaScript?
+NaN stands for Not a Number. It represents a value that is not 
+a valid number, even though its type is number
+console.log('hello'*5) // NaN
+console.log(typeof NaN) // number (even though it means NaN, its type in number)
+console.log(NaN==NaN) // false
+console.log(NaN===NaN) // false
+console.log(Number.isNaN(NaN));  // true
+
+
+13. What Should be the answer of 10+2+'77'
+console.log(10+2+'77'); // 1277
+
+14. what is the use of the delete operator?
+The delete operator is used to remove a property from an object
+let person={
+  name:'avi',
+  age : 25
+}
+
+delete person.age; // The age property is completely deleted
+
+console.log(person);
+
+let arr=[10,20,30,40]
+delete arr[2]  // don't use delete for array elements it gives empty item use splice
+console.log(arr);
+
+let nums=[1,2,3,4,5]
+nums.splice(2,1)  // use splice to delete an element from an array
+console.log(nums)
+
+
+15. what do you mean by escape characters ?
+Escape characters are special characters used inside strings to represent things 
+that are difficult or impossible to type directly.
+They start with a backslash\
+console.log('hello\navinash');
+console.log('hello\tavinash')
+console.log("\"India\" is my country");
+console.log("India's my country")
+console.log('India\'s my country')
+
+
+16. Name all the types of Pop up boxes available in JavaScript?
+alert()
+confirm()
+prompt()
+
+17 What do you mean by Cookies in JavaScript?
+
+Cookies are small pieces of data stored in the browser.
+
+They are used to:
+
+Store user login information
+
+Remember preferences (like theme, language)
+
+Track sessions
+
+Store small client-side data
+
+Cookies are stored as key–value pairs
+and are sent to the server with every http request
+
+
+18. How to create a cookie in javascript?
+In JavaScript we create cookie using document.cookie
+document.cookie="username=Avinash"; // it will expire when you close browser
+document.cookie = "username=Avinash; expires=Fri, 31 Dec 2026 12:00:00 UTC";
+If you don’t set expiry, it becomes a session cookie (deleted when browser closes).
+
+19. How can you read a cookie in javascript?
+you can read cookie using document.cookie
+console.log(document.cookie);
+
+
+
+
 
 
 
