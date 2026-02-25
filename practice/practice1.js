@@ -1,13 +1,26 @@
-// write a program to print the least number in given three numbers.
-let a =112;let b=56;let c=145;
-if (a===b && a===c){
-  console.log('All are equal');
-}else if(a<b &&a<c){
-  console.log('A is the lowest');
-}else if(b<a && b<c){
-  console.log('B is the smallest');
-}else if(c<a && c<b){
-  console.log('C is the lowest');
-}else{
-  console.log('Two numbers are equal and lowest');
+// write a program to print the given 3 numbers in ascending order?
+let a = 30;
+let b = 10;
+let c = 20;
+
+if (a <= b && a <= c) {
+    if (b <= c) {
+        console.log(a, b, c);
+    } else {
+        console.log(a, c, b);
+    }
+} 
+else if (b <= a && b <= c) {
+    if (a <= c) {
+        console.log(b, a, c);
+    } else {
+        console.log(b, c, a);
+    }
+} 
+else {
+    if (a <= b) {
+        console.log(c, a, b);
+    } else {
+        console.log(c, b, a);
+    }
 }
