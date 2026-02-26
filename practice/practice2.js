@@ -8,9 +8,12 @@ document.getElementById('btn').onclick=function(){
     // document.getElementById('h11').style.color='red';
     // document.getElementById('h11').style.fontSize='60px';
     // document.getElementById('h11').style.display='none';
-    document.getElementById('h11').style.visibility='hidden';
+    // document.getElementById('h11').style.visibility='hidden';
+    document.getElementById('h11').innerHTML=Date()
+    
 
 }
+
 
 
 
